@@ -166,5 +166,16 @@ WHERE Row_num > 1
 --ORDER BY PropertyAddress
 
 
+--DELETING UNUSE COLUMN
+
+SELECT *
+  FROM PortfolioProjects..NashvilleHousing
+
+  ALTER TABLE NashvilleHousing
+  DROP COLUMN OwnerAddress, TaxDistrict,PropertyAddress
+
+
+
+
 
 
